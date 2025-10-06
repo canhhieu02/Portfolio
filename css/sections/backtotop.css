@@ -1,0 +1,18 @@
+.gotop{
+    position: fixed;
+    border-radius: 30px;
+    width: 40px;
+    height: 40px;
+    background: goldenrod;
+    bottom: 15px;
+    right: 18px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-size: 18px;
+    animation: gotop 3s linear forwards;
+}
+
+.gotop:hover{
+    color: black;
+}
