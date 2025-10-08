@@ -70,6 +70,24 @@
     .projects__content_container {
         border-radius: 2rem;
     }
+
+    .line {
+        left: calc(10% - 1px);
+    }
+
+    .projects__cards_container {
+        flex-direction: row-reverse !important; 
+        transform: translateX(100%);
+    }
+
+    .projects_cards {
+        width: calc(90% - 2rem);
+    }
+
+    .bead {
+        left: 10%;
+        transform: translateX(-50%);
+    }
 }
 
 /* ======== Small Tablet - landscape mode ========= */
@@ -100,26 +118,6 @@
             grid-row: span 1 !important;
         }
     }
-
-    /** PROJECTS **/
-    .line {
-        left: calc(10% - 1px);
-    }
-
-    .projects__cards_container {
-        flex-direction: row-reverse !important; 
-        transform: translateX(100%);
-    }
-
-    .projects_cards {
-        width: calc(90% - 2rem);
-    }
-
-    .bead {
-        left: 10%;
-        transform: translateX(-50%);
-    }
-
 }
 
 

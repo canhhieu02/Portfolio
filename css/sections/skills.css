@@ -211,6 +211,7 @@
 
         &:hover {
             background-image: url("../../assets/cat2.jpeg");
+            transition: all .3s ease-in-out;
         }
     }
 }

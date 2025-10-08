@@ -2,8 +2,29 @@
 footer {
     padding: 40px 0;
     font-size: var(--caption-font-size);
-    color: var(--n-500);
+    color: black;
     text-align: center;
-    background-image: var(--gradient-color);
+    background: var(--p-100);
     max-width: none !important;
+}
+
+.footer__column--right {
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    & p {
+        color: var(--n-600);
+    }
+
+    & span, a {
+        font-weight: 600;
+        color: var(--p-950);
+    }
+
+    & a:hover {
+        text-decoration: underline;
+    }
 }

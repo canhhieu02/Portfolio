@@ -11,9 +11,13 @@ header {
         color: var(--n-600);
     }
 
-    & span {
+    & span, a {
         font-weight: 600;
         color: var(--p-950);
+    }
+
+    & a:hover {
+        text-decoration: underline;
     }
 }
 
@@ -35,7 +39,7 @@ header {
         gap: 8px;
     }
 
-   & .header__badge_container {
+    & .header__badge_container {
         display: flex;
         gap: 6px;
         text-align: center;
@@ -81,4 +85,11 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     flex-shrink: 0;  /* để phần tử không bị thu hẹp */
+}
+
+.header__img:hover {
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+    transition: all .3s ease-in-out;
 }

@@ -5,10 +5,15 @@
 @import "./sections/projects.css";
 @import "./sections/footer.css";
 @import "./sections/backtotop.css";
+@import "./sections/cursor.css";
 @import "./animation.css";
 
 * {
     box-sizing: border-box;
+}
+
+body {
+	cursor: none;
 }
 
 :root {
