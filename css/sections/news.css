@@ -1,0 +1,112 @@
+/* News Section Styles */
+.news__section {
+    padding: 6rem 0;
+    background-color: var(--p-20);
+}
+
+.news__grid_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+    margin-top: 3.5rem;
+}
+
+.news__card {
+    background-color: var(--foreground-color);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid var(--p-100);
+    display: flex;
+    flex-direction: column;
+}
+
+.news__card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+    border-color: var(--p-300);
+}
+
+.news__img_wrapper {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background-color: var(--p-100);
+}
+
+.news__img_wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.news__card:hover .news__img_wrapper img {
+    transform: scale(1.05);
+}
+
+.news__content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.news__meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    color: var(--n-500);
+    margin-bottom: 0.75rem;
+}
+
+.news__tag {
+    background-color: var(--p-100);
+    color: var(--p-700);
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-weight: 500;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.news__content h2 {
+    font-size: var(--h3-font-size);
+    color: var(--p-950);
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+.news__content p {
+    color: var(--n-600);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.news__readmore {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--p-600);
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.news__readmore:hover {
+    color: var(--p-800);
+}
+
+.news__readmore i {
+    transition: transform 0.3s ease;
+}
+
+.news__readmore:hover i {
+    transform: translateX(4px);
+}

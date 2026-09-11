@@ -1,0 +1,123 @@
+/* Experience Section Styles */
+.experience__section {
+    background-color: var(--p-20);
+    padding: 6rem 0;
+}
+
+.experience__timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 3rem auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.experience__timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 20px;
+    height: 100%;
+    width: 2px;
+    background: var(--p-200);
+}
+
+.experience__card {
+    position: relative;
+    padding-left: 60px;
+}
+
+.experience__card::before {
+    content: '';
+    position: absolute;
+    left: 14px;
+    top: 0;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: var(--p-500);
+    border: 3px solid var(--p-100);
+    z-index: 1;
+}
+
+.experience__card_header {
+    background: var(--foreground-color);
+    padding: 1.5rem;
+    border-radius: 12px 12px 0 0;
+    border: 1px solid var(--p-100);
+    border-bottom: none;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.experience__company {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.experience__company h2 {
+    font-size: var(--h3-font-size);
+    color: var(--p-950);
+    font-weight: 600;
+}
+
+.experience__badge {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 9999px;
+    font-weight: 500;
+}
+
+.experience__badge--current {
+    background-color: var(--p-100);
+    color: var(--p-700);
+}
+
+.experience__meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    color: var(--n-600);
+}
+
+.experience__role {
+    font-weight: 500;
+    color: var(--p-600);
+}
+
+.experience__period {
+    font-style: italic;
+}
+
+.experience__body {
+    background: var(--foreground-color);
+    padding: 1.5rem;
+    border-radius: 0 0 12px 12px;
+    border: 1px solid var(--p-100);
+    border-top: 1px dashed var(--p-200);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.experience__body ul {
+    list-style-type: disc;
+    padding-left: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.experience__body li {
+    color: var(--n-600);
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .experience__meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.25rem;
+    }
+}

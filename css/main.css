@@ -6,6 +6,9 @@
 @import "./sections/footer.css";
 @import "./sections/backtotop.css";
 @import "./sections/cursor.css";
+@import "./sections/experience.css";
+@import "./sections/education.css";
+@import "./sections/news.css";
 @import "./animation.css";
 
 * {
@@ -20,7 +23,7 @@ body {
     font-size: var(--p-font-size);   /* cỡ chữ */
     line-height: var(--p-line-height); /* khoảng cách dòng */
     letter-spacing: var(--p-letter-spacing); /* khoảng cách ký tự */
-    font-family: Arial, sans-serif;  /* kiểu chữ */
+    font-family: 'Inter', sans-serif;  /* kiểu chữ */
     font-weight: 400; /* độ đậm */
     font-style: normal;
 	scroll-behavior: smooth;
