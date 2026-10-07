@@ -39,8 +39,8 @@ const projectsData = [
     ],
     demoLink: "#",
     githubLink: "https://github.com/canhhieu02",
-    hasGithub: true,
-    hasDemo: true
+    hasGithub: false,
+    hasDemo: false
   },
   {
     title: "Nền Tảng Cán Bộ Số",
@@ -55,8 +55,8 @@ const projectsData = [
     ],
     demoLink: "#",
     githubLink: "https://github.com/canhhieu02",
-    hasGithub: true,
-    hasDemo: true
+    hasGithub: false,
+    hasDemo: false
   },
   {
     title: "Website & Mobile App Tương Tác Người Dân",
@@ -71,56 +71,26 @@ const projectsData = [
     ],
     demoLink: "#",
     githubLink: "https://github.com/canhhieu02",
-    hasGithub: true,
-    hasDemo: true
-  },
-  {
-    title: "Đồ Án Tốt Nghiệp — Kiểm Soát Truy Nhập Linux",
-    period: "10/2024 — 01/2025",
-    role: "",
-    tech: "",
-    description: "Xây dựng bài thực hành cho kiểm soát truy nhập và phân tích mã trong môi trường Linux.",
-    bullets: [],
-    demoLink: "",
-    githubLink: "https://github.com/canhhieu02/doantotnghiep",
-    hasGithub: true,
+    hasGithub: false,
     hasDemo: false
   },
   {
-    title: "Dự Án Môn Học — Tool Giấu Tin trong Audio",
-    period: "06/2024 — 08/2024",
-    role: "",
-    tech: "Python",
-    description: "Xây dựng tool giấu tin trong audio bằng Python (steganography).",
-    bullets: [],
-    demoLink: "https://rg.com.vn/d5VGg",
-    githubLink: "",
-    hasGithub: false,
-    hasDemo: true
-  },
-  {
-    title: "Website Khoa Tiếng Italia",
-    period: "16/09/2025 — 22/09/2025",
-    role: "",
-    tech: "HTML, CSS, JavaScript",
-    description: "Xây dựng một trang web giới thiệu Khoa Tiếng Italia, áp dụng các kỹ năng HTML, CSS, và JavaScript.",
-    bullets: [],
-    demoLink: "https://thuctap.inevn.com/nguyencanhhieu/TT0/index.html#s1",
-    githubLink: "https://github.com/canhhieu02/WebKhoaTiengItalia",
+    title: "Dự án cá nhân - Todolist",
+    period: "2025",
+    role: "Fullstack Developer",
+    tech: "React 19, Vite 7, TailwindCSS 4, Node.js, Express.js, MongoDB",
+    description: "Xây dựng ứng dụng web quản lý công việc theo mô hình Fullstack.",
+    bullets: [
+      "Xây dựng ứng dụng web quản lý công việc theo mô hình Fullstack, frontend dùng React + Vite, backend dùng Node.js + Express theo kiến trúc MVC.",
+      "Thiết kế MongoDB schema với Mongoose, hỗ trợ CRUD đầy đủ và lọc dữ liệu theo khoảng thời gian (ngày / tuần / tháng).",
+      "Tối ưu truy vấn bằng MongoDB Aggregation Pipeline ($facet) để lấy danh sách task và thống kê trong một lần gọi API duy nhất.",
+      "Xây dựng giao diện với TailwindCSS v4, Radix UI, tích hợp pagination, bộ lọc trạng thái, toast notifications.",
+      "Cấu hình CORS, dotenv, path alias, ES Modules cho môi trường phát triển chuẩn."
+    ],
+    demoLink: "#",
+    githubLink: "https://github.com/canhhieu02/todolist",
     hasGithub: true,
-    hasDemo: true
-  },
-  {
-    title: "Portfolio Cá Nhân",
-    period: "03/10/2025 — 06/10/2025",
-    role: "",
-    tech: "HTML, CSS, JavaScript",
-    description: "Xây dựng trang web hồ sơ cá nhân để giới thiệu bản thân, kỹ năng, kinh nghiệm và dự án đã thực hiện.",
-    bullets: [],
-    demoLink: "https://thuctap.inevn.com/nguyencanhhieu/TT1/index.html#s1",
-    githubLink: "https://github.com/canhhieu02/Portfolio",
-    hasGithub: true,
-    hasDemo: true
+    hasDemo: false
   }
 ];
 
@@ -131,7 +101,7 @@ const newsData = [
     tag: "Công nghệ",
     date: "20/10/2025",
     title: "Có gì mới trong React 19? Cập nhật những tính năng quan trọng",
-    description: "React 19 mang đến nhiều cải tiến vượt bậc như Server Components, Actions và các hook mới. Cùng tìm hiểu cách áp dụng vào dự án thực tế.",
+    description: "React 19 mang đến hàng loạt cải tiến đột phá, định hình lại cách xây dựng ứng dụng web. Từ Server Components giúp tối ưu hóa hiệu suất tải trang, đến Actions đơn giản hóa việc quản lý trạng thái form, cùng các hook mới như useOptimistic. Bài viết phân tích sâu từng tính năng và hướng dẫn áp dụng vào dự án thực tế.",
     link: "#"
   },
   {
@@ -139,7 +109,7 @@ const newsData = [
     tag: "Lập trình",
     date: "15/10/2025",
     title: "Xây dựng ứng dụng Real-time với Next.js và SignalR",
-    description: "Hướng dẫn chi tiết cách tích hợp SignalR vào Next.js App Router để tạo các ứng dụng thời gian thực hiệu suất cao, dễ bảo trì.",
+    description: "Xây dựng ứng dụng thời gian thực là một bài toán thú vị nhưng đầy thách thức. Bài viết hướng dẫn chi tiết cách tích hợp SignalR vào kiến trúc App Router của Next.js, giải quyết các vấn đề quản lý kết nối, xác thực và luồng dữ liệu hai chiều, giúp triển khai hệ thống thông báo hoặc dashboard hiệu suất cao.",
     link: "#"
   },
   {
@@ -147,7 +117,7 @@ const newsData = [
     tag: "Câu chuyện",
     date: "01/10/2025",
     title: "Hành trình từ sinh viên An toàn thông tin đến Fullstack Developer",
-    description: "Câu chuyện chia sẻ về quá trình chuyển hướng và những bài học kinh nghiệm quý giá trong quá trình học tập và làm việc.",
+    description: "Khởi đầu từ chuyên ngành An toàn thông tin, hành trình chuyển hướng sang Fullstack Developer là một chặng đường dài đầy thử thách. Bài viết là những chia sẻ chân thực về quá trình tự học, cách vượt qua áp lực khi tiếp cận công nghệ mới và những kinh nghiệm xương máu đúc kết được từ môi trường làm việc thực tế.",
     link: "#"
   }
 ];
@@ -192,7 +162,6 @@ const skillsData = {
   ],
   advancedTech: [
     { name: "TypeScript 5", icon: "./assets/icons/JS.svg" }, // Assuming TS icon is JS.svg in original HTML
-    { name: "Java", icon: "./assets/icons/java.svg" },
     { name: "Zustand 5", icon: "./assets/icons/react.svg" },
     { name: "ExpressJS", icon: "./assets/icons/node-js.svg" },
     { name: "Tailwind CSS 4", icon: "./assets/icons/css.svg" },

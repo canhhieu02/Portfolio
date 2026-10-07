@@ -84,10 +84,10 @@ function renderProjects() {
               ${project.bullets && project.bullets.length > 0 ? `<ul style="margin: 0.5rem 0 0 1rem; font-size: 0.9rem; opacity: 0.85;">
                 ${project.bullets.map(b => `<li>${b}</li>`).join('')}
               </ul>` : ''}
-              <div class="CTA" style="margin-top: 1rem;">
+              ${project.hasDemo || project.hasGithub ? `<div class="CTA" style="margin-top: 1rem;">
                 ${project.hasDemo ? `<a href="${project.demoLink}" target="_blank" rel="noopener noreferrer" class="primaryButton">Demo</a>` : ''}
                 ${project.hasGithub ? `<a href="${project.githubLink}" target="_blank" rel="noopener noreferrer" class="outlineButton">GitHub</a>` : ''}
-              </div>
+              </div>` : ''}
             </div>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import { getDocument } from 'pdfjs-dist/legacy/build/pdf.mjs';
 import { readFileSync } from 'fs';
 
-const buf = readFileSync('e:/ThuctapHoanthien/TT1/CV_Nguyễn Cảnh Hiếu_fresher Frontend.pdf');
+const buf = readFileSync('e:/ThuctapHoanthien/Portfolio/CV_Nguyễn Cảnh Hiếu_fresher Fullstack.pdf');
 const uint8Array = new Uint8Array(buf);
 
 const loadingTask = getDocument({ data: uint8Array, useWorkerFetch: false, isEvalSupported: false });
